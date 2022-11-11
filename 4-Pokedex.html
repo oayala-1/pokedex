@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="icon" href="./pokeball.png">
+    <link rel="stylesheet" href="./4-pokedex.css">
+</head>
+<body>
+    <h1 class="title">Pokédex</h1>
+    <div class="poke-info">
+        <input type="text" placeholder="pikachu" id="pokeName" name="pokeName" class="pokeName">
+        <img src="icon/pokeball.png" alt="Pokemon" id="pokeImg" width="150px" class="pokeImg">
+        <div class="stats">
+            <div class="name">
+                <p class="name_par" id="id"></p>
+                <p class="name_par" id="name"></p>
+            </div>
+            <div class="hp">
+                <div class="icon-container">
+                    <img class="icon" src="./icon/bandaid.svg">
+                </div>
+                <p class="text">Health: </p>
+                <p class="value" id="hp-value"></p>
+            </div>
+            <div class="attack">
+                <div class="icon-container">
+                    <img class="icon" src="./icon/sword.png">
+                </div>
+                <p class="text">Attack: </p>
+                <p class="value" id="attack-value"></p>
+            </div>
+            <div class="defense">
+                <div class="icon-container">
+                    <img class="icon" src="icon/shield-shaded.svg">
+                </div>
+                <p class="text">Defense: </p>
+                <p class="value" id="defense-value"></p>
+            </div>
+            <div class="speed">
+                <div class="icon-container">
+                    <img class="icon" src="icon/speed.svg">
+                </div>
+                <p class="text">Speed: </p>
+                <p class="value" id="speed-value"></p>
+            </div>
+        </div>
+        <button onclick="fetchPokemon()" class="button">Buscar</button>
+    </div>
+</body>
+<footer>
+    <script src="4-Pokedex.js"></script>
+</footer>
+</html>
